@@ -1,0 +1,9 @@
+Ten Meetings fornece serviços de assembleias para empresas de capital aberto. As Assembleias possuem várias Pautas e vários Participantes. 
+
+A assembleia possui algumas características, como nome e status. Uma assembleia pode estar no status ATIVO ou INATIVA. Apenas assembleias ATIVAS podem ter pautas votadas. 
+
+A pauta possui algumas características, como nome e quantidade total de votos. Uma pauta pode ser votada apenas uma vez por participante. 
+
+O participante possui nome e um vetor (array) de votos. Cada participante pode votar apenas uma vez em cada pauta. 
+ 
+Seu desafio é criar um algoritmo (em qualquer linguagem) que seja capaz de abrir uma assembleia, abrir uma pauta, permitir que o participante vote numa pauta, realizar o cômputo de votos de cada pauta.

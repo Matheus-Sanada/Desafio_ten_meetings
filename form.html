@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Formulario de votos</title>
+</head>
+<body>
+    <form class="form-horizontal">
+        <fieldset>
+        
+        <!-- Form Name -->
+        <legend>Preencha o formulário de votação</legend>
+        
+        <!-- Text input-->
+        <div class="form-group_text">
+          <label for="Nome">Nome</label>  
+          <input id="Nome" name="Nome" type="text" placeholder="Digite seu nome" required="">
+
+          <label for="sobrenome">Sobrenome</label>  
+          <input id="sobrenome" name="sobrenome" type="text" placeholder="Digite seu sobrenome" required="">
+        </div>
+         
+        
+        
+        <!-- Multiple Radios -->
+        <div class="form-group_radio">
+          <label for="SelectVotation">Selecione a opção de voto</label>
+          
+          <div class="radio">
+                <label for="SelectVotation-0">
+                <input type="radio" name="SelectVotation" id="SelectVotation-0" value="1" checked="checked">Sou a favor</label>
+
+                <label for="SelectVotation-1">
+                    <input type="radio" name="SelectVotation" id="SelectVotation-1" value="2">Sou contra</label>
+            </div>
+
+          
+            
+        </div>
+        
+        <!-- Button -->
+            <div class="form-group_button">
+                <button id="enviar" name="enviar" class="btn btn-success">Enviar</button>
+            </div>
+            </div>
+        
+            </fieldset>
+        </form>
+
+
+        <script src="javascript/global.js"></script>
+</body>
+</html>
