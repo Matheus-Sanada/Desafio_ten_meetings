@@ -16,7 +16,7 @@ function noassembly() {
 
 // ENTRADA PAUTAS
 
-let nameUser
+let nameUser = []
 let votations
 let votationsPositive = 0
 let votationsNegative = 0
@@ -29,7 +29,7 @@ function votation () {
     alert("Seja-bem vindo(a), fique a vontade para tomar a sua decisão :)")
 
 
-     nameUser = prompt("Informe seu nome: ")
+     nameUser.push(prompt("Informe seu nome: "))
      votations = prompt("Escolha o seu voto:\n1 - Estou a favor\n2 - Estou contra")
 
     switch (votations) {
@@ -68,6 +68,7 @@ function votation () {
 }
 
 
+
 function informations() {
 
     let userInfo = prompt("Selecione a opção desejada:\n1 - Nome dos participants\n2 - Votos totais\n3 - Sair do programa")
@@ -76,14 +77,17 @@ function informations() {
 
         case "1":
 
+       
+        alert(`Nome dos candidatos:\n${nameUser}`)
 
+       
+       
 
             break;
 
         case "2":
 
-        alert(`Quantidade de votos positivos ${votationsPositive}`)
-        alert(`Quantidade de votos negativos: ${votationsNegative}`) //
+        alert(`Quantidade de votos positivos ${votationsPositive}\n\nQuantidade de votos negativos: ${votationsNegative}`)
 
             break;
 
@@ -91,7 +95,6 @@ function informations() {
 
         return votations()
 
-            break;
     
         default:
             break;
